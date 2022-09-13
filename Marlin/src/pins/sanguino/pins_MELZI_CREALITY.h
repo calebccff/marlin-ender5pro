@@ -75,6 +75,8 @@
   #if FIL_RUNOUT_PIN == BEEPER_PIN
     #undef BEEPER_PIN
   #endif
+#elif Z_MIN_PROBE_PIN == BEEPER_PIN
+  #undef BEEPER_PIN
 #endif
 
 #if ENABLED(MINIPANEL)
